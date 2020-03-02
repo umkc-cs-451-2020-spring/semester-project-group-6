@@ -1,0 +1,15 @@
+/Users/MichelleFrost/Documents/dev/CommerceApi/bin/Debug/netcoreapp2.2/CommerceApi.deps.json
+/Users/MichelleFrost/Documents/dev/CommerceApi/bin/Debug/netcoreapp2.2/CommerceApi.runtimeconfig.json
+/Users/MichelleFrost/Documents/dev/CommerceApi/bin/Debug/netcoreapp2.2/CommerceApi.runtimeconfig.dev.json
+/Users/MichelleFrost/Documents/dev/CommerceApi/bin/Debug/netcoreapp2.2/CommerceApi.dll
+/Users/MichelleFrost/Documents/dev/CommerceApi/bin/Debug/netcoreapp2.2/CommerceApi.pdb
+/Users/MichelleFrost/Documents/dev/CommerceApi/obj/Debug/netcoreapp2.2/CommerceApi.csprojAssemblyReference.cache
+/Users/MichelleFrost/Documents/dev/CommerceApi/obj/Debug/netcoreapp2.2/CommerceApi.csproj.CoreCompileInputs.cache
+/Users/MichelleFrost/Documents/dev/CommerceApi/obj/Debug/netcoreapp2.2/CommerceApi.RazorAssemblyInfo.cache
+/Users/MichelleFrost/Documents/dev/CommerceApi/obj/Debug/netcoreapp2.2/CommerceApi.RazorAssemblyInfo.cs
+/Users/MichelleFrost/Documents/dev/CommerceApi/obj/Debug/netcoreapp2.2/CommerceApi.AssemblyInfoInputs.cache
+/Users/MichelleFrost/Documents/dev/CommerceApi/obj/Debug/netcoreapp2.2/CommerceApi.AssemblyInfo.cs
+/Users/MichelleFrost/Documents/dev/CommerceApi/obj/Debug/netcoreapp2.2/CommerceApi.RazorTargetAssemblyInfo.cache
+/Users/MichelleFrost/Documents/dev/CommerceApi/obj/Debug/netcoreapp2.2/CommerceApi.dll
+/Users/MichelleFrost/Documents/dev/CommerceApi/obj/Debug/netcoreapp2.2/CommerceApi.pdb
+/Users/MichelleFrost/Documents/dev/CommerceApi/bin/Debug/netcoreapp2.2/app.yaml

@@ -1,0 +1,8 @@
+runtime: aspnetcore
+env: flex
+service: api
+endpoints_api_service:
+    name: commercebank-451r.appspot.com
+    rollout_strategy: managed
+beta_settings:
+    cloud_sql_instances: commercebank-451r:us-central1:commerce-mysql

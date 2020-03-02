@@ -1,0 +1,128 @@
+swagger: '2.0'
+info:
+  version: 'v1'
+  title: Commerce API
+host: commercebank-451r.appspot.com
+basePath: /
+schemes:
+- https
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /api/Values:
+    get:
+      description: ''
+      summary: ApiValues_GET
+      tags:
+      - Values
+      operationId: ApiValues_GET
+      deprecated: false
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        200:
+          description: Success
+          schema:
+            type: array
+            items:
+              type: string
+          headers: {}
+    post:
+      description: ''
+      summary: ApiValues_POST
+      tags:
+      - Values
+      operationId: ApiValues_POST
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json-patch+json
+      parameters:
+      - name: body
+        in: body
+        required: false
+        description: ''
+        schema:
+          type: string
+      responses:
+        200:
+          description: Success
+          headers: {}
+  /api/Values/{id}:
+    get:
+      description: ''
+      summary: ApiValuesById_GET
+      tags:
+      - Values
+      operationId: ApiValuesById_GET
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: id
+        in: path
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      responses:
+        200:
+          description: Success
+          schema:
+            type: string
+          headers: {}
+    put:
+      description: ''
+      summary: ApiValuesById_PUT
+      tags:
+      - Values
+      operationId: ApiValuesById_PUT
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json-patch+json
+      parameters:
+      - name: id
+        in: path
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: body
+        in: body
+        required: false
+        description: ''
+        schema:
+          type: string
+      responses:
+        200:
+          description: Success
+          headers: {}
+    delete:
+      description: ''
+      summary: ApiValuesById_DELETE
+      tags:
+      - Values
+      operationId: ApiValuesById_DELETE
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: id
+        in: path
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      responses:
+        200:
+          description: Success
+          headers: {}
+tags:
+- name: Values
+  description: ''

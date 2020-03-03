@@ -13,3 +13,18 @@
 /Users/MichelleFrost/Documents/dev/CommerceApi/obj/Debug/netcoreapp2.2/CommerceApi.dll
 /Users/MichelleFrost/Documents/dev/CommerceApi/obj/Debug/netcoreapp2.2/CommerceApi.pdb
 /Users/MichelleFrost/Documents/dev/CommerceApi/bin/Debug/netcoreapp2.2/app.yaml
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\app.yaml
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.deps.json
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.runtimeconfig.json
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.runtimeconfig.dev.json
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.dll
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.pdb
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csprojAssemblyReference.cache
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csproj.CoreCompileInputs.cache
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cache
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cs
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfoInputs.cache
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfo.cs
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorTargetAssemblyInfo.cache
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.dll
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.pdb

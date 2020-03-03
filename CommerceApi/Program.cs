@@ -14,9 +14,12 @@ namespace CommerceApi
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
-        }
+            // imports transactions in Transaction list
+            List<Transaction> transactions = TransactionReader.ImportTransactions("transactions/CustomerA.csv");
 
+            CreateWebHostBuilder(args).Build().Run();
+
+        }
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();

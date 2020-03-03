@@ -1,28 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/MichelleFrost/Documents/dev/CommerceApi/CommerceApi.csproj": {}
+    "S:\\Google Drive\\UMKC\\UMKC - 2020\\CS 451 R\\CommerceBankSystem\\CommerceApi\\CommerceApi.csproj": {}
   },
   "projects": {
-    "/Users/MichelleFrost/Documents/dev/CommerceApi/CommerceApi.csproj": {
+    "S:\\Google Drive\\UMKC\\UMKC - 2020\\CS 451 R\\CommerceBankSystem\\CommerceApi\\CommerceApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/MichelleFrost/Documents/dev/CommerceApi/CommerceApi.csproj",
+        "projectUniqueName": "S:\\Google Drive\\UMKC\\UMKC - 2020\\CS 451 R\\CommerceBankSystem\\CommerceApi\\CommerceApi.csproj",
         "projectName": "CommerceApi",
-        "projectPath": "/Users/MichelleFrost/Documents/dev/CommerceApi/CommerceApi.csproj",
-        "packagesPath": "/Users/MichelleFrost/.nuget/packages/",
-        "outputPath": "/Users/MichelleFrost/Documents/dev/CommerceApi/obj/",
+        "projectPath": "S:\\Google Drive\\UMKC\\UMKC - 2020\\CS 451 R\\CommerceBankSystem\\CommerceApi\\CommerceApi.csproj",
+        "packagesPath": "C:\\Users\\Linden\\.nuget\\packages\\",
+        "outputPath": "S:\\Google Drive\\UMKC\\UMKC - 2020\\CS 451 R\\CommerceBankSystem\\CommerceApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/MichelleFrost/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Linden\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

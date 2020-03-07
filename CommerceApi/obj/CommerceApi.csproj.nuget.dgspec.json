@@ -1,28 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/MichelleFrost/Documents/dev/CommerceApi/CommerceApi.csproj": {}
+    "C:\\Users\\Brian Roden\\Desktop\\semester-project-group-6-3_LS\\CommerceApi\\CommerceApi.csproj": {}
   },
   "projects": {
-    "/Users/MichelleFrost/Documents/dev/CommerceApi/CommerceApi.csproj": {
+    "C:\\Users\\Brian Roden\\Desktop\\semester-project-group-6-3_LS\\CommerceApi\\CommerceApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/MichelleFrost/Documents/dev/CommerceApi/CommerceApi.csproj",
+        "projectUniqueName": "C:\\Users\\Brian Roden\\Desktop\\semester-project-group-6-3_LS\\CommerceApi\\CommerceApi.csproj",
         "projectName": "CommerceApi",
-        "projectPath": "/Users/MichelleFrost/Documents/dev/CommerceApi/CommerceApi.csproj",
-        "packagesPath": "/Users/MichelleFrost/.nuget/packages/",
-        "outputPath": "/Users/MichelleFrost/Documents/dev/CommerceApi/obj/",
+        "projectPath": "C:\\Users\\Brian Roden\\Desktop\\semester-project-group-6-3_LS\\CommerceApi\\CommerceApi.csproj",
+        "packagesPath": "C:\\Users\\Brian Roden\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brian Roden\\Desktop\\semester-project-group-6-3_LS\\CommerceApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/MichelleFrost/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Brian Roden\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -78,10 +80,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

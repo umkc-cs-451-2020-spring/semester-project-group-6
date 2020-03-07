@@ -13,3 +13,35 @@
 /Users/MichelleFrost/Documents/dev/CommerceApi/obj/Debug/netcoreapp2.2/CommerceApi.dll
 /Users/MichelleFrost/Documents/dev/CommerceApi/obj/Debug/netcoreapp2.2/CommerceApi.pdb
 /Users/MichelleFrost/Documents/dev/CommerceApi/bin/Debug/netcoreapp2.2/app.yaml
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\app.yaml
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.deps.json
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.runtimeconfig.json
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.runtimeconfig.dev.json
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.dll
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.pdb
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csprojAssemblyReference.cache
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csproj.CoreCompileInputs.cache
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cache
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cs
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfoInputs.cache
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfo.cs
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorTargetAssemblyInfo.cache
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.dll
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.pdb
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\app.yaml
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.deps.json
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.runtimeconfig.json
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.runtimeconfig.dev.json
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.dll
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.pdb
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csprojAssemblyReference.cache
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cache
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cs
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfoInputs.cache
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfo.cs
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorTargetAssemblyInfo.cache
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.dll
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.pdb

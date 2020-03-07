@@ -15,6 +15,7 @@ using Microsoft.Extensions.Options;
 using MySql.Data.MySqlClient;
 using MySql.Data;
 using System.Data.Common;
+using CommerceApi.dao;
 
 namespace CommerceApi
 {
@@ -24,6 +25,8 @@ namespace CommerceApi
         {
             Configuration = configuration;
         }
+
+        
         readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public IConfiguration Configuration { get; }
 
@@ -31,6 +34,7 @@ namespace CommerceApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
 
             //Register Swagger generator
             services.AddSwaggerGen(c => {
@@ -44,10 +48,13 @@ namespace CommerceApi
                     builder.WithOrigins("http://localhost:3000", "*");
                 });
             });
-           
+
             //MySql
-            services.AddTransient<MySqlDatabase>(_ => new MySqlDatabase("server=35.188.36.69; database=master; uid=student; pwd=Student2020;"));
-            
+            //services.AddTransient<MySqlDatabase>(_ => new MySqlDatabase("server=35.188.36.69; database=master; uid=student; pwd=Student2020;"));
+
+            // Dependency injection with the db access implementation
+            services.AddSingleton<ITransactionDao, AccessService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

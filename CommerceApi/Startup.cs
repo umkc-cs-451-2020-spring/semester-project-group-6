@@ -26,7 +26,6 @@ namespace CommerceApi
             Configuration = configuration;
         }
 
-        
         readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public IConfiguration Configuration { get; }
 
@@ -52,8 +51,8 @@ namespace CommerceApi
             //MySql
             //services.AddTransient<MySqlDatabase>(_ => new MySqlDatabase("server=35.188.36.69; database=master; uid=student; pwd=Student2020;"));
 
-            // Dependency injection with the fake db implementation
-            services.AddSingleton<ITransactionDao, FakeDatabaseAccessService>();
+            // Dependency injection with the db access implementation
+            services.AddSingleton<ITransactionDao, AccessService>();
 
         }
 

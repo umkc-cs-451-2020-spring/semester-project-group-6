@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace CommerceApi
 {
@@ -24,27 +25,16 @@ namespace CommerceApi
            
             foreach (string line in lines)
             {
-                string[] cell = line.Split(',');
+                string[] cell = Regex.Split(line, ",(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))");
                 Transaction transaction = new Transaction(
-                    Guid.NewGuid(),
                     cell[0],
                     cell[1],
-                    cell[2],
+                    cell[2].Substring(cell[2].IndexOf("\"") + 1, cell[2].Length - 2),
                     cell[3],
                     cell[4],
-                    cell[5],
-                    cell[6]);
+                    cell[5]);
                 transactionList.Add(transaction);
             }
-
-            // print to console for testing
-            /*
-            foreach (Transaction transaction in transactionList)
-            {
-                Console.WriteLine(transaction);
-            }
-            // Console.ReadLine();
-            */ 
 
             return transactionList;
         }

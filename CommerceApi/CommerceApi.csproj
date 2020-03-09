@@ -19,8 +19,5 @@
   <ItemGroup>
     <None Include="app.yaml" CopyToOutputDirectory="Always" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="transactions\" />
-  </ItemGroup>
 
 </Project>

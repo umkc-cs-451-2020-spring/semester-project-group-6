@@ -10,9 +10,7 @@ namespace CommerceApi
     public class Transaction
     {
         public Transaction(
-            Guid id, 
             string accountNumber, 
-            string accountType, 
             string processDate, 
             string balance, 
             string transactionType, 
@@ -20,37 +18,44 @@ namespace CommerceApi
             string description)
 
         {
-            this.id = id;
             this.accountNumber = accountNumber;
-            this.accountType = accountType;
             this.processDate = processDate;
             this.balance = balance;
             this.transactionType = transactionType;
             this.amount = amount;
             this.description = description;
+            this.accountType = "Checking"; // Hard coded this for the time being
         }
-        [JsonProperty(PropertyName = "id")]
-        private Guid id { get; set; }
+
+        public Transaction() {
+            this.accountNumber = "";
+            this.processDate = "";
+            this.balance = "";
+            this.transactionType = "";
+            this.amount = "";
+            this.description = "";
+            this.accountType = "Checking";
+        }
+
         [JsonProperty(PropertyName = "accountNumber")]
-        private string accountNumber { get; set; }
+        public string accountNumber { get; set; }
         [JsonProperty(PropertyName = "accountType")]
-        private string accountType { get; set; }
+        public string accountType { get; set; }
         [JsonProperty(PropertyName = "processDate")]
-        private string processDate { get; set; }
+        public string processDate { get; set; }
         [JsonProperty(PropertyName = "balance")]
-        private string balance { get; set; }
+        public string balance { get; set; }
         [JsonProperty(PropertyName = "transactionType")]
-        private string transactionType { get; set; }
+        public string transactionType { get; set; }
         [JsonProperty(PropertyName = "transactionAmount")]
-        private string amount { get; set; }
+        public string amount { get; set; }
         [JsonProperty(PropertyName = "description")]
-        private string description { get; set; }
+        public string description { get; set; }
 
         // to test output
         public override string ToString()
         {
             return
-                "ID: " + id +
                 " Account Number: " + accountNumber +
                 " Account Type: " + accountType +
                 " Processing Date: " + processDate +

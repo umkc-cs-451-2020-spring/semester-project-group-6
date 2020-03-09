@@ -9,9 +9,9 @@ namespace CommerceApi.dao
     public interface ITransactionDao
     {
         List<Transaction> getAllTransactions();
+        List<Transaction> getTransactionByAccountNumber(int accountNumber);
+        Transaction insertTransaction(Transaction transaction);
 
-        Transaction insertTransaction(Guid id, Transaction transaction);
-       
     }
 
 

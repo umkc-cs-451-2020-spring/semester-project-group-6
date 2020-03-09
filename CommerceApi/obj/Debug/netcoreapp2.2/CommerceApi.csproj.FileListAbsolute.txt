@@ -28,3 +28,54 @@ S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Deb
 S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorTargetAssemblyInfo.cache
 S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.dll
 S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.pdb
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\app.yaml
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.deps.json
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.runtimeconfig.json
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.runtimeconfig.dev.json
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.dll
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.pdb
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csprojAssemblyReference.cache
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cache
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cs
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfoInputs.cache
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfo.cs
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorTargetAssemblyInfo.cache
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.dll
+C:\Users\Brian Roden\Desktop\semester-project-group-6-3_LS\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.pdb
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csprojAssemblyReference.cache
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cache
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cs
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfoInputs.cache
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfo.cs
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.dll
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.pdb
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\bin\Debug\netcoreapp2.2\app.yaml
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.deps.json
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.runtimeconfig.json
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.runtimeconfig.dev.json
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.dll
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.pdb
+C:\Users\Bobby\Desktop\semester-project-group-6-master\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorTargetAssemblyInfo.cache
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\app.yaml
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.deps.json
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.runtimeconfig.json
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.runtimeconfig.dev.json
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.dll
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.pdb
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csprojAssemblyReference.cache
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cache
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cs
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfoInputs.cache
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfo.cs
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorTargetAssemblyInfo.cache
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.dll
+C:\Users\Bobby\source\repos\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.pdb

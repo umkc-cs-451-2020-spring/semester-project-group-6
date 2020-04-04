@@ -1,0 +1,1 @@
+These scripts were for initial testing of the database. Don't use these scripts.

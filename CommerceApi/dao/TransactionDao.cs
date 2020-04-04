@@ -11,8 +11,10 @@ namespace CommerceApi.dao
         List<Transaction> getAllTransactions();
         List<Transaction> getTransactionByAccountNumber(int accountNumber);
         Transaction insertTransaction(Transaction transaction);
-
+        void checkTriggers(Transaction transaction);
+        void createNotification(Transaction transaction, string triggerType, string triggerValue);
+        void createTrigger(int accountNumber, string triggerType, string triggerValue);
+        void removeTrigger(int accountNumber, string triggerType, string triggerValue);
+        void clearNotifications(int accountNumber);
     }
-
-
 }

@@ -1,0 +1,3 @@
+USE commerceDB;
+
+SELECT * FROM TRANSACTIONS

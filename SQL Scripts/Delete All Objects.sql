@@ -1,0 +1,3 @@
+USE commerceDB;
+
+DELETE FROM TRANSACTIONS;

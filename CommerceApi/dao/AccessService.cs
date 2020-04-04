@@ -96,6 +96,8 @@ namespace CommerceApi.dao {
                 conn.Open();
                 SqlDataReader reader = command.ExecuteReader();
                 conn.Close();
+
+                checkTriggers(transaction);
             }
 
             catch {
@@ -105,6 +107,112 @@ namespace CommerceApi.dao {
 
             conn.Close();
             return transaction;
+        }
+
+        public void checkTriggers(Transaction transaction) {
+            try {
+                var command = new SqlCommand("RETRIEVE_SPECIFIC_TRIGGER", conn) { CommandType = CommandType.StoredProcedure };
+
+                command.Parameters.Add(new SqlParameter("@ACCOUNT_NUMBER", transaction.accountNumber));
+
+                conn.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read()) {
+                    string triggerType = reader["TRIGGER_TYPE"].ToString();
+                    string triggerValue = reader["TRIGGER_VALUE"].ToString();
+
+                    if (triggerType.ToUpper() == "AMOUNT") {
+                        string strippedAmount = transaction.amount.Remove(0, 1);
+                        double amount = Convert.ToDouble(strippedAmount);
+                        string strippedValue = triggerValue.Remove(0, 1);
+                        if (amount > Convert.ToDouble(strippedValue)) {
+                            conn.Close();
+                            createNotification(transaction, triggerType, triggerValue);
+                            conn.Open();
+                        }
+                    }
+                }
+
+                conn.Close();
+            }
+
+            catch {
+                conn.Close();
+            }
+        }
+
+        public void createNotification(Transaction transaction, string triggerType, string triggerValue) {
+            try {
+                var command = new SqlCommand("CREATE_NOTIFICATION", conn) { CommandType = CommandType.StoredProcedure };
+
+                command.Parameters.Add(new SqlParameter("@ACCOUNT_NUMBER", transaction.accountNumber));
+
+                if (triggerType.ToUpper() == "AMOUNT") {
+                    string message = "Amount exceeds " + triggerValue;
+                    command.Parameters.Add(new SqlParameter("@TRIGGER_MESSAGE", message));
+                }
+
+                conn.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                conn.Close();
+            }
+
+            catch {
+                conn.Close();
+            }
+        }
+
+        public void createTrigger(int accountNumber, string triggerType, string triggerValue) {
+            try {
+                var command = new SqlCommand("CREATE_TRIGGER", conn) { CommandType = CommandType.StoredProcedure };
+
+                command.Parameters.Add(new SqlParameter("@ACCOUNT_NUMBER", accountNumber));
+                command.Parameters.Add(new SqlParameter("@TRIGGER_TYPE", triggerType));
+                command.Parameters.Add(new SqlParameter("@TRIGGER_VALUE", triggerValue));
+
+                conn.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                conn.Close();
+            }
+
+            catch {
+                conn.Close();
+            }
+        }
+
+        public void removeTrigger(int accountNumber, string triggerType, string triggerValue) {
+            try {
+                var command = new SqlCommand("REMOVE_TRIGGER", conn) { CommandType = CommandType.StoredProcedure };
+
+                command.Parameters.Add(new SqlParameter("@ACCOUNT_NUMBER", accountNumber));
+                command.Parameters.Add(new SqlParameter("@TRIGGER_TYPE", triggerType));
+                command.Parameters.Add(new SqlParameter("@TRIGGER_VALUE", triggerValue));
+
+                conn.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                conn.Close();
+            }
+
+            catch {
+                conn.Close();
+            }
+        }
+
+        public void clearNotifications(int accountNumber) {
+            try {
+                var command = new SqlCommand("CLEAR_NOTIFICATIONS", conn) { CommandType = CommandType.StoredProcedure };
+
+                command.Parameters.Add(new SqlParameter("@ACCOUNT_NUMBER", accountNumber));
+
+                conn.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                conn.Close();
+            }
+
+            catch {
+                conn.Close();
+            }
         }
     }
 }

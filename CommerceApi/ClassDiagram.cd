@@ -1,0 +1,89 @@
+﻿<!-- Urvanov Syntax Highlighter v2.8.9 -->
+
+
+  <div id="urvanov-syntax-highlighter-5e8a3893d491d863721485" class="urvanov-syntax-highlighter-syntax urvanov-syntax-highlighter-theme-tomorrow-night urvanov-syntax-highlighter-font-consolas urvanov-syntax-highlighter-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important; height: auto;">
+
+    <div class="urvanov-syntax-highlighter-plain-wrap">
+      <textarea wrap="soft" class="urvanov-syntax-highlighter-plain print-no" data-settings="dblclick" readonly="" style="tab-size: 4; font-size: 12px !important; line-height: 15px !important; z-index: 0; opacity: 0; overflow: hidden;">
+        &lt;?xml version="1.0" encoding="utf-8"?>
+        &lt;ClassDiagram MajorVersion="1" MinorVersion="1">
+        &lt;Font Name="Segoe UI" Size="9" />
+        &lt;/ClassDiagram>
+      </textarea>
+    </div>
+    <div class="urvanov-syntax-highlighter-main" style="position: relative; z-index: 1; overflow: hidden;">
+      <table class="urvanov-syntax-highlighter-table" style="">
+        <tbody>
+          <tr class="urvanov-syntax-highlighter-row">
+            <td class="urvanov-syntax-highlighter-nums " data-settings="show">
+              <div class="urvanov-syntax-highlighter-nums-content" style="font-size: 12px !important; line-height: 15px !important;">
+                <div class="urvanov-syntax-highlighter-num" data-line="urvanov-syntax-highlighter-5e8a3893d491d863721485-1">1</div>
+                <div class="urvanov-syntax-highlighter-num urvanov-syntax-highlighter-striped-num" data-line="urvanov-syntax-highlighter-5e8a3893d491d863721485-2">2</div>
+                <div class="urvanov-syntax-highlighter-num" data-line="urvanov-syntax-highlighter-5e8a3893d491d863721485-3">3</div>
+                <div class="urvanov-syntax-highlighter-num urvanov-syntax-highlighter-striped-num" data-line="urvanov-syntax-highlighter-5e8a3893d491d863721485-4">4</div>
+              </div>
+            </td>
+            <td class="urvanov-syntax-highlighter-code">
+              <div class="urvanov-syntax-highlighter-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;">
+                <div class="urvanov-syntax-highlighter-line" id="urvanov-syntax-highlighter-5e8a3893d491d863721485-1">
+                  <span class="urvanov-syntax-highlighter-o">&</span>
+                  <span class="urvanov-syntax-highlighter-v">lt</span>
+                  <span class="urvanov-syntax-highlighter-sy">;</span>
+                  <span class="urvanov-syntax-highlighter-sy">?</span>
+                  <span class="urvanov-syntax-highlighter-e">xml </span>
+                  <span class="urvanov-syntax-highlighter-v">version</span>
+                  <span class="urvanov-syntax-highlighter-o">=</span>
+                  <span class="urvanov-syntax-highlighter-s">"1.0"</span>
+                  <span class="urvanov-syntax-highlighter-h"> </span>
+                  <span class="urvanov-syntax-highlighter-v">encoding</span>
+                  <span class="urvanov-syntax-highlighter-o">=</span>
+                  <span class="urvanov-syntax-highlighter-s">"utf-8"</span>
+                  <span class="urvanov-syntax-highlighter-sy">?</span>
+                  <span class="urvanov-syntax-highlighter-o">></span>
+                </div>
+                <div class="urvanov-syntax-highlighter-line urvanov-syntax-highlighter-striped-line" id="urvanov-syntax-highlighter-5e8a3893d491d863721485-2">
+                  <span class="urvanov-syntax-highlighter-o">&</span>
+                  <span class="urvanov-syntax-highlighter-v">lt</span>
+                  <span class="urvanov-syntax-highlighter-sy">;</span>
+                  <span class="urvanov-syntax-highlighter-e">ClassDiagram </span>
+                  <span class="urvanov-syntax-highlighter-v">MajorVersion</span>
+                  <span class="urvanov-syntax-highlighter-o">=</span>
+                  <span class="urvanov-syntax-highlighter-s">"1"</span>
+                  <span class="urvanov-syntax-highlighter-h"> </span>
+                  <span class="urvanov-syntax-highlighter-v">MinorVersion</span>
+                  <span class="urvanov-syntax-highlighter-o">=</span>
+                  <span class="urvanov-syntax-highlighter-s">"1"</span>
+                  <span class="urvanov-syntax-highlighter-o">></span>
+                </div>
+                <div class="urvanov-syntax-highlighter-line" id="urvanov-syntax-highlighter-5e8a3893d491d863721485-3">
+                  <span class="urvanov-syntax-highlighter-h">    </span>
+                  <span class="urvanov-syntax-highlighter-o">&</span>
+                  <span class="urvanov-syntax-highlighter-v">lt</span>
+                  <span class="urvanov-syntax-highlighter-sy">;</span>
+                  <span class="urvanov-syntax-highlighter-e">Font </span>
+                  <span class="urvanov-syntax-highlighter-v">Name</span>
+                  <span class="urvanov-syntax-highlighter-o">=</span>
+                  <span class="urvanov-syntax-highlighter-s">"Segoe UI"</span>
+                  <span class="urvanov-syntax-highlighter-h"> </span>
+                  <span class="urvanov-syntax-highlighter-v">Size</span>
+                  <span class="urvanov-syntax-highlighter-o">=</span>
+                  <span class="urvanov-syntax-highlighter-s">"9"</span>
+                  <span class="urvanov-syntax-highlighter-h"> </span>
+                  <span class="urvanov-syntax-highlighter-o">/</span>
+                  <span class="urvanov-syntax-highlighter-o">></span>
+                </div>
+                <div class="urvanov-syntax-highlighter-line urvanov-syntax-highlighter-striped-line" id="urvanov-syntax-highlighter-5e8a3893d491d863721485-4">
+                  <span class="urvanov-syntax-highlighter-o">&</span>
+                  <span class="urvanov-syntax-highlighter-v">lt</span>
+                  <span class="urvanov-syntax-highlighter-sy">;</span>
+                  <span class="urvanov-syntax-highlighter-o">/</span>
+                  <span class="urvanov-syntax-highlighter-v">ClassDiagram</span>
+                  <span class="urvanov-syntax-highlighter-o">></span>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

@@ -53,7 +53,8 @@ namespace CommerceApi
             //services.AddTransient<MySqlDatabase>(_ => new MySqlDatabase("server=35.188.36.69; database=master; uid=student; pwd=Student2020;"));
 
             // Dependency injection with the db access implementation
-            services.AddSingleton<ITransactionDao, AccessService>();
+            //services.AddSingleton<ITransactionDao, AccessService>();
+            services.AddSingleton<IValuesDao, AccessService>();
 
         }
 

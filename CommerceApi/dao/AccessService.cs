@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace CommerceApi.dao {
-    public class AccessService : ITransactionDao {
+    public class AccessService : IValuesDao {
         // Access service will have a connection string all the time, no need to retype this for every function
         private SqlConnection conn = new SqlConnection("Server=localhost\\sqlexpress;Database=commerceDB;Trusted_Connection=True;");
         public List<Transaction> transactionList = new List<Transaction>();

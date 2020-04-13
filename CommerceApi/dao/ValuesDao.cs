@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace CommerceApi.dao
 {
 
-    public interface ITransactionDao
+    public interface IValuesDao
     {
         List<Transaction> getAllTransactions();
         List<Transaction> getTransactionByAccountNumber(int accountNumber);

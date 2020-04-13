@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "\\bin",
+    "\\bin\\Release",
+    "\\bin\\Release\\netcoreapp2.2",
+    "\\Controllers",
+    "\\Properties",
+    "\\TransactionReader"
+  ],
+  "PreviewInSolutionExplorer": false
+}

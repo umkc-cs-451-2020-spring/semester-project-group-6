@@ -6,18 +6,19 @@ using CommerceApi.dao;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
+
 namespace CommerceApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        private readonly ITransactionDao _transactionDao;
-               
+        private static IValuesDao _valuesDao;
 
-        public ValuesController(ITransactionDao transactionDao)
+
+        public ValuesController(IValuesDao valuesDao)
         {
-            _transactionDao = transactionDao;
+            _valuesDao = valuesDao;
         }
 
 
@@ -25,7 +26,7 @@ namespace CommerceApi.Controllers
         [HttpGet]
         public ActionResult<List<Transaction>> GetAllTransactions()
         {
-           return _transactionDao.getAllTransactions();        
+            return _valuesDao.getAllTransactions();
         }
 
         // GET api/values/5
@@ -52,5 +53,16 @@ namespace CommerceApi.Controllers
         public void Delete(int id)
         {
         }
-    }
+}
+
+
+
+
+
+
+
+
+
+
+
 }

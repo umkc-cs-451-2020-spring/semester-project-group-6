@@ -20,7 +20,6 @@ S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Deb
 S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.dll
 S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.pdb
 S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csprojAssemblyReference.cache
-S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csproj.CoreCompileInputs.cache
 S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cache
 S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cs
 S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfoInputs.cache
@@ -64,3 +63,8 @@ C:\Users\Brian Roden\Source\Repos\umkc-cs-451-2020-spring\semester-project-group
 C:\Users\Brian Roden\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.pdb
 C:\Users\Brian Roden\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csproj.CoreCompileInputs.cache
 C:\Users\Brian Roden\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.genruntimeconfig.cache
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\appsettings.Development.json
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\appsettings.json
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.genruntimeconfig.cache
+S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csproj.CoreCompileInputs.cache

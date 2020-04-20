@@ -126,7 +126,7 @@ namespace CommerceApi.initial_setup {
                 }
 
                 else if (triggerType.ToUpper() == "TIME") {
-                    string message = "Purchase made outside of " + triggerValue;
+                    string message = "Purchase made within " + triggerValue;
                     command.Parameters.Add(new SqlParameter("@TRIGGER_MESSAGE", message));
                 }
 

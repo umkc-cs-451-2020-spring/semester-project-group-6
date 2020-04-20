@@ -68,3 +68,22 @@ S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Deb
 S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
 S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.genruntimeconfig.cache
 S:\Google Drive\UMKC\UMKC - 2020\CS 451 R\CommerceBankSystem\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csproj.CoreCompileInputs.cache
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\app.yaml
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.deps.json
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.runtimeconfig.json
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.runtimeconfig.dev.json
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.dll
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\bin\Debug\netcoreapp2.2\CommerceApi.pdb
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csprojAssemblyReference.cache
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.csproj.CoreCompileInputs.cache
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cache
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorAssemblyInfo.cs
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfoInputs.cache
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.AssemblyInfo.cs
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.RazorTargetAssemblyInfo.cache
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.dll
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.pdb
+C:\Users\Brian\Source\Repos\umkc-cs-451-2020-spring\semester-project-group-6\CommerceApi\obj\Debug\netcoreapp2.2\CommerceApi.genruntimeconfig.cache

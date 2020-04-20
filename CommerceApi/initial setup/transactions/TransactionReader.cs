@@ -33,7 +33,9 @@ namespace CommerceApi
                     cell[2].Substring(cell[2].IndexOf("\"") + 1, cell[2].Length - 2),
                     cell[3],
                     cell[4],
-                    cell[5]);
+                    cell[5],
+                    cell[6],
+                    cell[7]);
                 transactionList.Add(transaction);
             }
 

@@ -24,10 +24,14 @@ namespace CommerceApi.Controllers
 
         // GET api/values
         [HttpGet]
-        public ActionResult<List<Transaction>> GetAllTransactions()
-        {
+        public ActionResult<List<Transaction>> GetAllTransactions() {
             return _valuesDao.getAllTransactions();
         }
+
+        //[HttpGet]
+        //public ActionResult<List<Notification>> GetAllNotifications() {
+        //    return _valuesDao.getAllNotifications();
+        //}
 
         // GET api/values/5
         [HttpGet("{id}")]

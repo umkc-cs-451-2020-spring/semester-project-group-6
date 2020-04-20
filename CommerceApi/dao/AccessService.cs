@@ -10,6 +10,7 @@ namespace CommerceApi.dao {
         // Access service will have a connection string all the time, no need to retype this for every function
         private SqlConnection conn = new SqlConnection("Server=localhost\\sqlexpress;Database=commerceDB;Trusted_Connection=True;");
         public List<Transaction> transactionList = new List<Transaction>();
+        public List<Notification> notificationList = new List<Notification>();
 
         // This function returns all transactions, regardless of account number
         public List<Transaction> getAllTransactions() {
@@ -30,6 +31,8 @@ namespace CommerceApi.dao {
                     newTransaction.transactionType = reader["TRANSACTION_TYPE"].ToString();
                     newTransaction.amount = reader["TRANSACTION_AMOUNT"].ToString();
                     newTransaction.description = reader["TRANSACTION_DESCRIPTION"].ToString();
+                    newTransaction.time = reader["TRANSACTION_TIME"].ToString();
+                    newTransaction.state = reader["TRANSACTION_STATE"].ToString();
 
                     transactionList.Add(newTransaction);
                 }
@@ -46,7 +49,7 @@ namespace CommerceApi.dao {
 
         // This function returns transaction with a specific account number
         // TEAM: should we combine these two functions and use a variable to differentiate between all transactions and a specific one?
-        public List<Transaction> getTransactionByAccountNumber(int accountNumber) {
+        public List<Transaction> getTransactionByAccountNumber(string accountNumber) {
             transactionList.Clear();
 
             try {
@@ -80,8 +83,35 @@ namespace CommerceApi.dao {
             return transactionList;
         }
 
+        public List<Notification> getAllNotifications() {
+            notificationList.Clear();
+
+            try {
+                conn.Open();
+                SqlCommand command = new SqlCommand("RETRIEVE_ALL_NOTIFICATIONS", conn) { CommandType = CommandType.StoredProcedure };
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read()) {
+                    Notification newNotification = new Notification();
+
+                    newNotification.accountNumber = reader["ACCOUNT_NUMBER"].ToString();
+                    newNotification.notificationMessage = reader["TRIGGER_MESSAGE"].ToString();
+
+                    notificationList.Add(newNotification);
+                }
+
+                conn.Close();
+            }
+
+            catch {
+                conn.Close();
+            }
+
+            return notificationList;
+        }
+
         // This function inserts a transaction into the database
-        public Transaction insertTransaction(Transaction transaction) {
+        public void insertTransaction(Transaction transaction) {
             try {
                 var command = new SqlCommand("CREATE_TRANSACTION", conn) { CommandType = CommandType.StoredProcedure };
 
@@ -92,6 +122,8 @@ namespace CommerceApi.dao {
                 command.Parameters.Add(new SqlParameter("@TRANSACTION_TYPE", transaction.transactionType));
                 command.Parameters.Add(new SqlParameter("@TRANSACTION_AMOUNT", transaction.amount));
                 command.Parameters.Add(new SqlParameter("@TRANSACTION_DESCRIPTION", transaction.description));
+                command.Parameters.Add(new SqlParameter("@TRANSACTION_TIME", transaction.time));
+                command.Parameters.Add(new SqlParameter("@TRANSACTION_STATE", transaction.state));
 
                 conn.Open();
                 SqlDataReader reader = command.ExecuteReader();
@@ -102,11 +134,9 @@ namespace CommerceApi.dao {
 
             catch {
                 conn.Close();
-                return transaction;
             }
 
             conn.Close();
-            return transaction;
         }
 
         public void checkTriggers(Transaction transaction) {
@@ -127,6 +157,28 @@ namespace CommerceApi.dao {
                         double amount = Convert.ToDouble(strippedAmount);
                         string strippedValue = triggerValue.Remove(0, 1);
                         if (amount > Convert.ToDouble(strippedValue)) {
+                            conn.Close();
+                            createNotification(transaction, triggerType, triggerValue);
+                            conn.Open();
+                        }
+                    }
+
+                    else if (triggerType.ToUpper() == "TIME") {
+                        string[] timePieces = triggerValue.Split("-");
+                        string strippedTime = transaction.time.Remove(transaction.time.IndexOf(":"), 1);
+                        int time = Convert.ToInt32(strippedTime);
+                        int triggerTimeStart = Convert.ToInt32(timePieces[0].Remove(timePieces[0].IndexOf(":"), 1));
+                        int triggerTimeEnd = Convert.ToInt32(timePieces[1].Remove(timePieces[1].IndexOf(":"), 1));
+
+                        if (time >= triggerTimeStart || time < triggerTimeEnd) {
+                            conn.Close();
+                            createNotification(transaction, triggerType, triggerValue);
+                            conn.Open();
+                        }
+                    }
+
+                    else if (triggerType.ToUpper() == "STATE") {
+                        if (transaction.state != triggerValue) {
                             conn.Close();
                             createNotification(transaction, triggerType, triggerValue);
                             conn.Open();
@@ -153,6 +205,16 @@ namespace CommerceApi.dao {
                     command.Parameters.Add(new SqlParameter("@TRIGGER_MESSAGE", message));
                 }
 
+                else if (triggerType.ToUpper() == "TIME") {
+                    string message = "Purchase made outside of " + triggerValue;
+                    command.Parameters.Add(new SqlParameter("@TRIGGER_MESSAGE", message));
+                }
+
+                else if (triggerType.ToUpper() == "STATE") {
+                    string message = "Out of state purchase made in " + transaction.state;
+                    command.Parameters.Add(new SqlParameter("@TRIGGER_MESSAGE", message));
+                }
+
                 conn.Open();
                 SqlDataReader reader = command.ExecuteReader();
                 conn.Close();
@@ -163,7 +225,7 @@ namespace CommerceApi.dao {
             }
         }
 
-        public void createTrigger(int accountNumber, string triggerType, string triggerValue) {
+        public void createTrigger(string accountNumber, string triggerType, string triggerValue) {
             try {
                 var command = new SqlCommand("CREATE_TRIGGER", conn) { CommandType = CommandType.StoredProcedure };
 
@@ -181,7 +243,7 @@ namespace CommerceApi.dao {
             }
         }
 
-        public void removeTrigger(int accountNumber, string triggerType, string triggerValue) {
+        public void removeTrigger(string accountNumber, string triggerType, string triggerValue) {
             try {
                 var command = new SqlCommand("REMOVE_TRIGGER", conn) { CommandType = CommandType.StoredProcedure };
 
@@ -199,9 +261,25 @@ namespace CommerceApi.dao {
             }
         }
 
-        public void clearNotifications(int accountNumber) {
+        public void clearNotifications(string accountNumber) {
             try {
                 var command = new SqlCommand("CLEAR_NOTIFICATIONS", conn) { CommandType = CommandType.StoredProcedure };
+
+                command.Parameters.Add(new SqlParameter("@ACCOUNT_NUMBER", accountNumber));
+
+                conn.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                conn.Close();
+            }
+
+            catch {
+                conn.Close();
+            }
+        }
+
+        public void clearTriggers(string accountNumber) {
+            try {
+                var command = new SqlCommand("CLEAR_TRIGGERS", conn) { CommandType = CommandType.StoredProcedure };
 
                 command.Parameters.Add(new SqlParameter("@ACCOUNT_NUMBER", accountNumber));
 

@@ -9,13 +9,16 @@ namespace CommerceApi
     
     public class Transaction
     {
-        public Transaction(
+        public Transaction (
             string accountNumber, 
             string processDate, 
             string balance, 
             string transactionType, 
             string amount, 
-            string description)
+            string description,
+            string time,
+            string state
+            )
 
         {
             this.accountNumber = accountNumber;
@@ -25,6 +28,8 @@ namespace CommerceApi
             this.amount = amount;
             this.description = description;
             this.accountType = "Checking"; // Hard coded this for the time being
+            this.time = time;
+            this.state = state;
         }
 
         public Transaction() {
@@ -35,6 +40,8 @@ namespace CommerceApi
             this.amount = "";
             this.description = "";
             this.accountType = "Checking";
+            this.time = "";
+            this.state = "";
         }
 
         [JsonProperty(PropertyName = "accountNumber")]
@@ -51,6 +58,10 @@ namespace CommerceApi
         public string amount { get; set; }
         [JsonProperty(PropertyName = "description")]
         public string description { get; set; }
+        [JsonProperty(PropertyName = "time")]
+        public string time { get; set; }
+        [JsonProperty(PropertyName = "state")]
+        public string state { get; set; }
 
         // to test output
         public override string ToString()
@@ -62,7 +73,9 @@ namespace CommerceApi
                 " Balance: " + balance +
                 " Transaction Type: " + transactionType +
                 " Amount: " + amount +
-                " Description: " + description;
+                " Description: " + description +
+                " Time: " + time +
+                " State: " + state;
         }
 
 

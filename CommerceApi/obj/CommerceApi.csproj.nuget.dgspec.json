@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "S:\\Google Drive\\UMKC\\UMKC - 2020\\CS 451 R\\CommerceBankSystem\\CommerceApi\\CommerceApi.csproj": {}
+    "C:\\Users\\Brian\\Source\\Repos\\umkc-cs-451-2020-spring\\semester-project-group-6\\CommerceApi\\CommerceApi.csproj": {}
   },
   "projects": {
-    "S:\\Google Drive\\UMKC\\UMKC - 2020\\CS 451 R\\CommerceBankSystem\\CommerceApi\\CommerceApi.csproj": {
+    "C:\\Users\\Brian\\Source\\Repos\\umkc-cs-451-2020-spring\\semester-project-group-6\\CommerceApi\\CommerceApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Google Drive\\UMKC\\UMKC - 2020\\CS 451 R\\CommerceBankSystem\\CommerceApi\\CommerceApi.csproj",
+        "projectUniqueName": "C:\\Users\\Brian\\Source\\Repos\\umkc-cs-451-2020-spring\\semester-project-group-6\\CommerceApi\\CommerceApi.csproj",
         "projectName": "CommerceApi",
-        "projectPath": "S:\\Google Drive\\UMKC\\UMKC - 2020\\CS 451 R\\CommerceBankSystem\\CommerceApi\\CommerceApi.csproj",
-        "packagesPath": "C:\\Users\\Linden\\.nuget\\packages\\",
-        "outputPath": "S:\\Google Drive\\UMKC\\UMKC - 2020\\CS 451 R\\CommerceBankSystem\\CommerceApi\\obj\\",
+        "projectPath": "C:\\Users\\Brian\\Source\\Repos\\umkc-cs-451-2020-spring\\semester-project-group-6\\CommerceApi\\CommerceApi.csproj",
+        "packagesPath": "C:\\Users\\Brian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brian\\Source\\Repos\\umkc-cs-451-2020-spring\\semester-project-group-6\\CommerceApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Linden\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommerceApi", "CommerceApi.csproj", "{6E329B72-4CE0-475A-8365-F8E0C82E4140}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommerceApiTest", "..\CommerceApiTest\CommerceApiTest.csproj", "{6422BF83-8177-410C-97E2-0BBFA04CD8F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommerceApiTest", "..\CommerceApiTest\CommerceApiTest.csproj", "{6422BF83-8177-410C-97E2-0BBFA04CD8F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

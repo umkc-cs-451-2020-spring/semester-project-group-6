@@ -57,16 +57,5 @@ namespace CommerceApi.Controllers
         public void Delete(int id)
         {
         }
-}
-
-
-
-
-
-
-
-
-
-
-
+    }
 }

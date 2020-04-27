@@ -69,6 +69,8 @@ namespace CommerceApi.dao {
                     newTransaction.transactionType = reader["TRANSACTION_TYPE"].ToString();
                     newTransaction.amount = reader["TRANSACTION_AMOUNT"].ToString();
                     newTransaction.description = reader["TRANSACTION_DESCRIPTION"].ToString();
+                    newTransaction.time = reader["TRANSACTION_TIME"].ToString();
+                    newTransaction.state = reader["TRANSACTION_STATE"].ToString();
 
                     transactionList.Add(newTransaction);
                 }
@@ -94,6 +96,41 @@ namespace CommerceApi.dao {
                 while (reader.Read()) {
                     Notification newNotification = new Notification();
 
+                    newNotification.transactionID = reader["TRANSACTION_ID"].ToString();
+                    newNotification.accountNumber = reader["ACCOUNT_NUMBER"].ToString();
+                    newNotification.notificationMessage = reader["TRIGGER_MESSAGE"].ToString();
+
+                    notificationList.Add(newNotification);
+                }
+
+                conn.Close();
+            }
+
+            catch {
+                conn.Close();
+            }
+
+            updateTransactionID();
+
+            return notificationList;
+        }
+
+        public List<Notification> getNotificationsByAccount(string accountNumber) {
+            notificationList.Clear();
+
+            try {
+                updateTransactionID();
+
+                conn.Open();
+                SqlCommand command = new SqlCommand("RETRIEVE_SPECIFIC_NOTIFICATION", conn) { CommandType = CommandType.StoredProcedure };
+                command.Parameters.Add(new SqlParameter("@ACCOUNT_NUMBER", accountNumber));
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while(reader.Read()) {
+                    Notification newNotification = new Notification();
+
+                    newNotification.transactionID = reader["TRANSACTION_ID"].ToString();
                     newNotification.accountNumber = reader["ACCOUNT_NUMBER"].ToString();
                     newNotification.notificationMessage = reader["TRIGGER_MESSAGE"].ToString();
 
@@ -108,6 +145,42 @@ namespace CommerceApi.dao {
             }
 
             return notificationList;
+        }
+
+        public List<Transaction> getTransactionByID(string transactionID) {
+            transactionList.Clear();
+
+            try {
+                conn.Open();
+                SqlCommand command = new SqlCommand("RETRIEVE_TRANSACTION_BY_ID", conn) { CommandType = CommandType.StoredProcedure };
+                command.Parameters.Add(new SqlParameter("@TRANSACTION_ID", transactionID));
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while(reader.Read()) {
+                    Transaction newTransaction = new Transaction();
+
+                    newTransaction.accountNumber = reader["ACCOUNT_NUMBER"].ToString();
+                    newTransaction.accountType = reader["ACCOUNT_TYPE"].ToString();
+                    newTransaction.processDate = reader["PROCESSING_DATE"].ToString();
+                    newTransaction.balance = reader["BALANCE"].ToString();
+                    newTransaction.transactionType = reader["TRANSACTION_TYPE"].ToString();
+                    newTransaction.amount = reader["TRANSACTION_AMOUNT"].ToString();
+                    newTransaction.description = reader["TRANSACTION_DESCRIPTION"].ToString();
+                    newTransaction.time = reader["TRANSACTION_TIME"].ToString();
+                    newTransaction.state = reader["TRANSACTION_STATE"].ToString();
+
+                    transactionList.Add(newTransaction);
+                }
+
+                conn.Close();
+            }
+
+            catch {
+                conn.Close();
+            }
+
+            return transactionList;
         }
 
         // This function inserts a transaction into the database
@@ -270,6 +343,7 @@ namespace CommerceApi.dao {
                 conn.Open();
                 SqlDataReader reader = command.ExecuteReader();
                 conn.Close();
+                notificationList.Clear();
             }
 
             catch {
@@ -285,6 +359,27 @@ namespace CommerceApi.dao {
 
                 conn.Open();
                 SqlDataReader reader = command.ExecuteReader();
+                conn.Close();
+            }
+
+            catch {
+                conn.Close();
+            }
+        }
+
+        public void updateTransactionID() {
+            try {
+                SqlCommand command = new SqlCommand("UPDATE_TRANSACTION_ID", conn) { CommandType = CommandType.StoredProcedure };
+
+                conn.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                int index = 0;
+                while(reader.Read()) {
+                    notificationList[index].transactionID = reader["ID"].ToString();
+                    index++;
+                }
+
                 conn.Close();
             }
 

@@ -10,6 +10,7 @@ namespace CommerceApi
     public class Transaction
     {
         public Transaction (
+            string transactionID,
             string accountNumber, 
             string processDate, 
             string balance, 
@@ -21,6 +22,7 @@ namespace CommerceApi
             )
 
         {
+            this.transactionID = transactionID; // It doesn't matter what we set the ID as because the server takes care of that 
             this.accountNumber = accountNumber;
             this.processDate = processDate;
             this.balance = balance;
@@ -33,6 +35,7 @@ namespace CommerceApi
         }
 
         public Transaction() {
+            this.transactionID = "";
             this.accountNumber = "";
             this.processDate = "";
             this.balance = "";
@@ -44,6 +47,8 @@ namespace CommerceApi
             this.state = "";
         }
 
+        [JsonProperty(PropertyName = "transactionID")]
+        public string transactionID;
         [JsonProperty(PropertyName = "accountNumber")]
         public string accountNumber { get; set; }
         [JsonProperty(PropertyName = "accountType")]
@@ -64,9 +69,9 @@ namespace CommerceApi
         public string state { get; set; }
 
         // to test output
-        public override string ToString()
-        {
+        public override string ToString() {
             return
+                " Transaction ID: " + transactionID +
                 " Account Number: " + accountNumber +
                 " Account Type: " + accountType +
                 " Processing Date: " + processDate +
@@ -77,8 +82,5 @@ namespace CommerceApi
                 " Time: " + time +
                 " State: " + state;
         }
-
-
-
     }
 }

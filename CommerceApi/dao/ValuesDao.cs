@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 
 namespace CommerceApi.dao
 {
-
     public interface IValuesDao
     {
         List<Transaction> getAllTransactions();
@@ -13,6 +12,7 @@ namespace CommerceApi.dao
         List<Notification> getAllNotifications();
         List<Notification> getNotificationsByAccount(string accountNumber);
         List<Transaction> getTransactionByID(string transactionID);
+        List<Trigger> getAllTriggers();
         void insertTransaction(Transaction transaction);
         void checkTriggers(Transaction transaction);
         void createNotification(Transaction transaction, string triggerType, string triggerValue);

@@ -22,22 +22,37 @@ namespace CommerceApi.Controllers
         }
 
 
-        // GET api/values
+       // GET api/values
         [HttpGet]
         public ActionResult<List<Transaction>> GetAllTransactions() {
             return _valuesDao.getAllTransactions();
         }
 
-        //[HttpGet]
-        //public ActionResult<List<Notification>> GetAllNotifications() {
-        //    return _valuesDao.getAllNotifications();
-        //}
+        [HttpGet("notifications")]
+        public ActionResult<List<Notification>> GetAllNotifications() {
+            return _valuesDao.getAllNotifications();
+        }
+
+        [HttpGet("notifications/{id}")]
+        public ActionResult<List<Notification>> GetNotificationsByAccount(string id) {
+            return _valuesDao.getNotificationsByAccount(id);
+        }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<List<Transaction>> GetTransactionByAccountNumber(string id)
         {
-            return "value";
+            return _valuesDao.getTransactionByAccountNumber(id);
+        }
+
+        [HttpGet("triggers")]
+        public ActionResult<List<Trigger>> GetAllTriggers() {
+            return _valuesDao.getAllTriggers();
+        }
+
+        [HttpPost("{id}/trigger")]
+        public void CreateTrigger(string id, string triggerType, string triggerValue) {
+            _valuesDao.createTrigger(id, triggerType, triggerValue);
         }
 
         // POST api/values

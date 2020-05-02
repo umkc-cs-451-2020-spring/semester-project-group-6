@@ -31,7 +31,7 @@ namespace CommerceApi
                     cell[0],
                     cell[1],
                     cell[2],
-                    cell[3].Substring(cell[2].IndexOf("\"") + 1, cell[2].Length - 2),
+                    cell[3].Substring(cell[3].IndexOf("\"") + 1, cell[3].Length - 2),
                     cell[4],
                     cell[5],
                     cell[6],

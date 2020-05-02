@@ -22,7 +22,7 @@ namespace CommerceApi.initial_setup {
 
             // To test if the notifications are being displayed as a Json, you can clear the transaction table, and then uncomment the below line
             // Fill the db in Program.cs and then enable the GetAllNotifications() getter in ValuesController
-            // createTrigger("211111110", "TIME", "22:30-08:40");
+            createTrigger("211111110", "TIME", "22:30-08:40");
             
             try {
                 foreach (Transaction entry in transactionList) {

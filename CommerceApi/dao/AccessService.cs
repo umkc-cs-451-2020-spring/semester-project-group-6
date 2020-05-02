@@ -11,6 +11,7 @@ namespace CommerceApi.dao {
         private SqlConnection conn = new SqlConnection("Server=localhost\\sqlexpress;Database=commerceDB;Trusted_Connection=True;");
         public List<Transaction> transactionList = new List<Transaction>();
         public List<Notification> notificationList = new List<Notification>();
+        public List<Trigger> triggerList = new List<Trigger>();
 
         // This function returns all transactions, regardless of account number
         public List<Transaction> getAllTransactions() {
@@ -24,6 +25,7 @@ namespace CommerceApi.dao {
                 while (reader.Read()) {
                     Transaction newTransaction = new Transaction();
 
+                    newTransaction.transactionID = reader["ID"].ToString();
                     newTransaction.accountNumber = reader["ACCOUNT_NUMBER"].ToString();
                     newTransaction.accountType = reader["ACCOUNT_TYPE"].ToString();
                     newTransaction.processDate = reader["PROCESSING_DATE"].ToString();
@@ -62,6 +64,7 @@ namespace CommerceApi.dao {
                 while (reader.Read()) {
                     Transaction newTransaction = new Transaction();
 
+                    newTransaction.transactionID = reader["ID"].ToString();
                     newTransaction.accountNumber = reader["ACCOUNT_NUMBER"].ToString();
                     newTransaction.accountType = reader["ACCOUNT_TYPE"].ToString();
                     newTransaction.processDate = reader["PROCESSING_DATE"].ToString();
@@ -119,7 +122,6 @@ namespace CommerceApi.dao {
             notificationList.Clear();
 
             try {
-                updateTransactionID();
 
                 conn.Open();
                 SqlCommand command = new SqlCommand("RETRIEVE_SPECIFIC_NOTIFICATION", conn) { CommandType = CommandType.StoredProcedure };
@@ -138,6 +140,8 @@ namespace CommerceApi.dao {
                 }
 
                 conn.Close();
+
+                updateTransactionID();
             }
 
             catch {
@@ -181,6 +185,35 @@ namespace CommerceApi.dao {
             }
 
             return transactionList;
+        }
+
+        public List<Trigger> getAllTriggers() {
+            triggerList.Clear();
+
+            try {
+                conn.Open();
+                SqlCommand command = new SqlCommand("RETRIEVE_ALL_TRIGGERS", conn) { CommandType = CommandType.StoredProcedure };
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while(reader.Read()) {
+                    Trigger newTrigger = new Trigger();
+
+                    newTrigger.accountNumber = reader["ACCOUNT_NUMBER"].ToString();
+                    newTrigger.triggerType = reader["TRIGGER_TYPE"].ToString();
+                    newTrigger.triggerValue = reader["TRIGGER_VALUE"].ToString();
+
+                    triggerList.Add(newTrigger);
+                }
+
+                conn.Close();
+            }
+
+            catch {
+                conn.Close();
+            }
+
+            return triggerList;
         }
 
         // This function inserts a transaction into the database
